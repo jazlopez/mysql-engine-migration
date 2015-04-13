@@ -7,7 +7,7 @@ Convert MyISAM tables to InnoDB engine
 Version 1.0
 https://github.com/jazlopez/mysql-engine-migration
 
-Usage: myisam_to_innodb 
+Usage: convert.sh 
 
 	--include     Only convert specified tables. Separate the list by comma and enclose each table name by single quote e.g. include='users','post','forums'
 	              If you define an include list --limit is ignored.
