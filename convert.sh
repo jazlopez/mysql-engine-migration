@@ -162,7 +162,7 @@ migration_notice "Connected to database"
 # get list of MyISAM tables
 isamLIST="SELECT CONCAT('ALTER TABLE \`',table_schema,'\`.\`',table_name,'\` ENGINE=InnoDB;') "
 isamLIST="$isamLIST FROM information_schema.tables "
-isamLIST="$isamLIST WHERE table_schema='viewbug' "
+isamLIST="$isamLIST WHERE table_schema='$db' "
 isamLIST="$isamLIST AND ENGINE='MyISAM' "
 
 # include tables?
